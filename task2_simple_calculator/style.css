@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #efe2ba;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    text-align: center;
+    color: #4056a1;
+}
+
+p{
+    color: #4056a1;
+    font-size: 18px;
+}
+
+main{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+#calculator{
+    width: 20%;
+    height: 85%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #8d9ed7;
+    border: 2px solid #4056a1;
+    border-radius: 10px;
+}
+
+#controls{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    justify-content: center;
+}
+
+.control-element{
+    height: 60px;
+    cursor: pointer;
+    border: 0.5px solid black;
+}
+
+.operation{
+    background: rgb(47, 255, 92);
+}
+
+.delete{
+    background: rgb(255, 109, 109);
+}
+
+.result{
+    background: rgb(138, 95, 255);
+}
+
+#history{
+    width: 35%;
+    text-align: center;
+    overflow-y: auto;
+}
+
+#history h2{
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #4056a1;
+    position: sticky;
+    top: 0;
+}
+
+input{
+    width: 80%;
+    height: 35px;
+    margin-bottom: 70px;
+    text-align: end;
+    padding: 5px;
+    border: 2px solid #4056a1;
+    border-radius: 5px;
+}
+
+footer{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

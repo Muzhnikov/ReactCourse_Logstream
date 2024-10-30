@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <h1>My calculator</h1> 
+    </header>
+    
+    <main>
+        <div id="calculator">
+            <input type="text" id="display">
+            <div id="controls">
+                <button class="control-element" onclick="addSymbol('7')">7</button>
+                <button class="control-element" onclick="addSymbol('8')">8</button>
+                <button class="control-element" onclick="addSymbol('9')">9</button>
+                <button class="control-element operation" onclick="addSymbol('+')">+</button>
+
+                <button class="control-element" onclick="addSymbol('4')">4</button>
+                <button class="control-element" onclick="addSymbol('5')">5</button>
+                <button class="control-element" onclick="addSymbol('6')">6</button>
+                <button class="control-element operation" onclick="addSymbol('-')">-</button>
+
+                <button class="control-element" onclick="addSymbol('1')">1</button>
+                <button class="control-element" onclick="addSymbol('2')">2</button>
+                <button class="control-element" onclick="addSymbol('3')">3</button>
+                <button class="control-element operation" onclick="addSymbol('/')">/</button>
+
+                <button class="control-element" onclick="addSymbol('0')">0</button>
+                <button class="control-element delete" onclick="clearDisplay()">C</button>
+                <button class="control-element result" onclick="calculate()">=</button>
+                <button class="control-element operation" onclick="addSymbol('×')">×</button>
+            </div>
+        </div>
+        <div id="history">
+            <h2>History</h2>
+        </div>
+    </main>
+
+    <footer>
+        <p>Автор Мужников Артем</p>
+        <div id="links-container">
+            <a href="https://vk.com/artemm04"><img width="30" height="30" src="https://img.icons8.com/ios/50/vk-com.png" alt="vk-com"/></a>
+            <a href="https://t.me/Artemm04"><img width="30" height="30" src="https://img.icons8.com/ios/50/telegram.png" alt="telegram"/></a>
+            <a href="https://www.instagram.com/artemm04/"><img width="30" height="30" src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram"/></a>
+            <a href="https://github.com/Muzhnikov"><img width="30" height="30" src="https://img.icons8.com/ios/50/github--v1.png" alt="github"/></a>
+        </div>
+    </footer>    
+    <script src="code.js"></script>
+</body>
+</html>
